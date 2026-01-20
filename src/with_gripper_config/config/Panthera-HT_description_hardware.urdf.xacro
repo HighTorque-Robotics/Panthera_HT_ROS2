@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Panthera-HT_description">
+    <xacro:arg name="config_file" default="$(find hightorque_robot)/robot_param/Leader.yaml" />
+    <xacro:arg name="control_mode" default="position_velocity" />
+
+    <!-- Import Panthera-HT_description urdf file -->
+    <xacro:include filename="$(find panthera_ht_description_with_finger)/urdf/Panthera-HT_description_with_finger.urdf.xacro" />
+
+    <!-- Import hardware control_xacro -->
+    <xacro:include filename="Panthera-HT_description_hardware.ros2_control.xacro" />
+
+    <!-- Instantiate hardware interface -->
+    <xacro:Panthera-HT_description_hardware_ros2_control
+        name="PantheraHardware"
+        config_file="$(arg config_file)"
+        control_mode="$(arg control_mode)"/>
+
+</robot>

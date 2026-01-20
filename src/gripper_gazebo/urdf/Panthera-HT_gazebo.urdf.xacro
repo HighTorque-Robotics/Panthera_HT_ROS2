@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Panthera-HT_description">
+    <xacro:arg name="initial_positions_file"
+               default="$(find with_gripper_config)/config/initial_positions.yaml" />
+    <xacro:arg name="ros2_control_params"
+               default="$(find gripper_gazebo)/config/ros2_controllers.yaml" />
+
+    <!-- 1. Import base URDF -->
+    <xacro:include filename="$(find panthera_ht_description_with_finger)/urdf/Panthera-HT_description_with_finger.urdf.xacro" />
+
+    <!-- 2. Import Gazebo configuration (materials, friction, world joint, plugin) -->
+    <xacro:include filename="$(find gripper_gazebo)/urdf/gazebo.xacro" />
+
+    <!-- 3. Import Gazebo ros2_control -->
+    <xacro:include filename="$(find gripper_gazebo)/config/gazebo_ros2_control.xacro" />
+    <xacro:gazebo_ros2_control name="GazeboSystem"
+                               initial_positions_file="$(arg initial_positions_file)"/>
+</robot>

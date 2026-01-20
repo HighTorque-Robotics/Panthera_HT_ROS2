@@ -1,0 +1,31 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: panthera_ht_description_with_finger
+    relative_path: urdf/Panthera-HT_description_with_finger.urdf.xacro
+  srdf:
+    relative_path: config/Panthera-HT_description.srdf
+  package_settings:
+    author_name: tk
+    author_email: 153282466@qq.com
+    generated_timestamp: 1768361870
+  control_xacro:
+    command:
+      - position
+      - velocity
+      - effort
+    state:
+      - position
+      - velocity
+      - effort
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+      - velocity
+      - effort
+    state:
+      - position
+      - velocity
+      - effort

@@ -1,0 +1,20 @@
+<launch>
+  <!-- Load MoveIt configuration -->
+  <let name="robot_description_config"
+       value="$(command 'xacro $(find-pkg-share with_gripper_config)/config/Panthera-HT_description.urdf.xacro')" />
+
+  <let name="robot_description_semantic"
+       value="$(command 'cat $(find-pkg-share with_gripper_config)/config/Panthera-HT_description.srdf')" />
+
+  <let name="kinematics_config"
+       value="$(find-pkg-share with_gripper_config)/config/kinematics.yaml" />
+
+  <!-- Test Cartesian Path Node -->
+  <node pkg="gripper_robot_commander" exec="test_moveit_by_cartesian" output="screen">
+    <param name="robot_description" value="$(var robot_description_config)" />
+    <param name="robot_description_semantic" value="$(var robot_description_semantic)" />
+    <rosparam file="$(var kinematics_config)" />
+    <param name="use_sim_time" value="false" />
+  </node>
+
+</launch>
