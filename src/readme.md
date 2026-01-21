@@ -206,7 +206,7 @@ with_gripper_config/
 
 **运行方法**:
 1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/pure_src/build 
+2：进入以下路径/ros_ws/src/srcsrc/build 
 3:将build里面原来编译好的文件全部删掉:rm -rf *
 4:在build路径下运行:cmake ..
 5：在build路径下编译:make
@@ -220,7 +220,7 @@ with_gripper_config/
 
 **运行方法**:
 1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/pure_src/build 
+2：进入以下路径/ros_ws/src/srcsrc/build 
 3:将build里面原来编译好的文件全部删掉:rm -rf *
 4:在build路径下运行:cmake ..
 5：在build路径下编译:make
@@ -234,7 +234,7 @@ with_gripper_config/
 
 **运行方法**:
 1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/pure_src/build 
+2：进入以下路径/ros_ws/src/srcsrc/build 
 3:将build里面原来编译好的文件全部删掉:rm -rf *
 4:在build路径下运行:cmake ..
 5：在build路径下编译:make
@@ -248,7 +248,7 @@ with_gripper_config/
 
 **运行方法**:
 1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/pure_src/build 
+2：进入以下路径/ros_ws/src/srcsrc/build 
 3:将build里面原来编译好的文件全部删掉:rm -rf *
 4:在build路径下运行:cmake ..
 5：在build路径下编译:make
