@@ -210,7 +210,7 @@ with_gripper_config/
 3:将build里面原来编译好的文件全部删掉:rm -rf * \
 4:在build路径下运行:cmake .. \
 5：在build路径下编译:make \
-6:在build路径下运行：./pure_cartesian_impedance_control \
+6:在build路径下运行：./pure_cartesian_impedance_control 
 
 ### 2. 运行笛卡尔空降阻抗控制（但是给定每个关节初始值让回到原来位置） (3_cartesian_impedance_control.cpp)
 **功能**: 实现笛卡尔空间的阻抗控制，但是每一个轴都有回到原来初始位置的趋势
@@ -224,7 +224,7 @@ with_gripper_config/
 3:将build里面原来编译好的文件全部删掉:rm -rf * \
 4:在build路径下运行:cmake .. \
 5：在build路径下编译:make \
-6:在build路径下运行：./3_cartesian_impedance_control \
+6:在build路径下运行：./3_cartesian_impedance_control 
 
 ### 3. 实现在A和B两点间的来回运动的阻抗控制 (cartesian_impedance_ab_motion.cpp)
 **功能**: 机械臂在A和B点间来回运动，实现其过程中的阻抗控制
@@ -238,7 +238,7 @@ with_gripper_config/
 3:将build里面原来编译好的文件全部删掉:rm -rf * \
 4:在build路径下运行:cmake .. \
 5：在build路径下编译:make \
-6:在build路径下运行：./cartesian_impedance_ab_motion \
+6:在build路径下运行：./cartesian_impedance_ab_motion 
 
 ### 4. 运行关节空间的阻抗控制 (2_joint_impedance_control.cpp)
 **功能**: 实现关节空间的阻抗控制
@@ -252,4 +252,4 @@ with_gripper_config/
 3:将build里面原来编译好的文件全部删掉:rm -rf * \
 4:在build路径下运行:cmake .. \
 5：在build路径下编译:make \
-6:在build路径下运行：./2_joint_impedance_control \
+6:在build路径下运行：./2_joint_impedance_control 
