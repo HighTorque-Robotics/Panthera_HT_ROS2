@@ -205,12 +205,12 @@ with_gripper_config/
 - 运行代码3秒后，机械臂将记录当前的位置作为固定位置。后机械臂固定到该固定位置，对机械臂施加扰动后机械臂体现阻抗特性。
 
 **运行方法**:
-1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/srcsrc/build 
-3:将build里面原来编译好的文件全部删掉:rm -rf *
-4:在build路径下运行:cmake ..
-5：在build路径下编译:make
-6:在build路径下运行：./pure_cartesian_impedance_control
+1:检查串口是否连上:ls dev/ttyACM* \
+2：进入以下路径/ros_ws/src/srcsrc/build \ 
+3:将build里面原来编译好的文件全部删掉:rm -rf * \
+4:在build路径下运行:cmake .. \
+5：在build路径下编译:make \
+6:在build路径下运行：./pure_cartesian_impedance_control \
 
 ### 2. 运行笛卡尔空降阻抗控制（但是给定每个关节初始值让回到原来位置） (3_cartesian_impedance_control.cpp)
 **功能**: 实现笛卡尔空间的阻抗控制，但是每一个轴都有回到原来初始位置的趋势
@@ -219,12 +219,12 @@ with_gripper_config/
 - 机械臂将直接前往到写死的那个位置，机械臂固定到该固定位置，对机械臂施加扰动后机械臂体现阻抗特性。但是对机械臂侧边进行扰动，机械臂将回到原来的位置。
 
 **运行方法**:
-1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/srcsrc/build 
-3:将build里面原来编译好的文件全部删掉:rm -rf *
-4:在build路径下运行:cmake ..
-5：在build路径下编译:make
-6:在build路径下运行：./3_cartesian_impedance_control
+1:检查串口是否连上:ls dev/ttyACM* \
+2：进入以下路径/ros_ws/src/srcsrc/build \ 
+3:将build里面原来编译好的文件全部删掉:rm -rf * \
+4:在build路径下运行:cmake .. \
+5：在build路径下编译:make \
+6:在build路径下运行：./3_cartesian_impedance_control \
 
 ### 3. 实现在A和B两点间的来回运动的阻抗控制 (cartesian_impedance_ab_motion.cpp)
 **功能**: 机械臂在A和B点间来回运动，实现其过程中的阻抗控制
@@ -233,12 +233,12 @@ with_gripper_config/
 - 启动程序后3秒，机械臂将记录当前位置A点，后终端要求输入相对于A的另外个位置B（一般设为往x方向偏移0.3，y和z方向偏移为0）
 
 **运行方法**:
-1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/srcsrc/build 
-3:将build里面原来编译好的文件全部删掉:rm -rf *
-4:在build路径下运行:cmake ..
-5：在build路径下编译:make
-6:在build路径下运行：./cartesian_impedance_ab_motion
+1:检查串口是否连上:ls dev/ttyACM* \
+2：进入以下路径/ros_ws/src/srcsrc/build \
+3:将build里面原来编译好的文件全部删掉:rm -rf * \
+4:在build路径下运行:cmake .. \
+5：在build路径下编译:make \
+6:在build路径下运行：./cartesian_impedance_ab_motion \
 
 ### 4. 运行关节空间的阻抗控制 (2_joint_impedance_control.cpp)
 **功能**: 实现关节空间的阻抗控制
@@ -247,9 +247,9 @@ with_gripper_config/
 - 机械臂将直接前往到写死的那个位置，机械臂固定到该固定位置，机械臂会回到原来位置
 
 **运行方法**:
-1:检查串口是否连上:ls dev/ttyACM*
-2：进入以下路径/ros_ws/src/srcsrc/build 
-3:将build里面原来编译好的文件全部删掉:rm -rf *
-4:在build路径下运行:cmake ..
-5：在build路径下编译:make
-6:在build路径下运行：./2_joint_impedance_control
+1:检查串口是否连上:ls dev/ttyACM* \
+2：进入以下路径/ros_ws/src/srcsrc/build \ 
+3:将build里面原来编译好的文件全部删掉:rm -rf * \
+4:在build路径下运行:cmake .. \
+5：在build路径下编译:make \
+6:在build路径下运行：./2_joint_impedance_control \
